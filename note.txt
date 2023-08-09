@@ -1,0 +1,101 @@
+Next.js Project Structure:
+
+Top-level folders:
+
+1. app: App Router
+2. pages: Pages Router
+3. public: Static assets to be served
+4. src:	Optional application source folder
+
+Top-level files:
+
+1. next.config.js: Configuration file for Next.js
+2. package.json: Project dependencies and scripts
+3. middleware.ts: Next.js request middleware
+4. .env: Environment variables
+5. .env.local: Local environment variables
+6. .env.production:	Production environment variables
+7. .env.development: Development environment variables
+8. .eslintrc.json: Configuration file for ESLint
+9. .gitignore: Git files and folders to ignore
+10. jsconfig.json: Configuration file for JavaScript
+11. postcss.config.js: Configuration file for Tailwind CSS
+
+app Routing Conventions:
+Routing Files:
+
+1. layout: Layout
+2. page: Page
+3. loading:	Loading UI
+4.not-found: Not found UI
+5. error: Error UI
+6. global-error: Global error UI
+7. route: API endpoint
+8. template: Re-rendered layout
+9. default:	Parallel route fallback page
+
+Nested Routes:
+1. folder: Route segment
+2. folder/folder: Nested route segment
+
+Dynamic Routes:
+1. [folder]: Dynamic route segment
+2. [...folder]: Catch-all route segment
+3. [[...folder]]: Optional catch-all route segment
+
+Route Groups and Private Folders:
+1. (folder): Group routes without affecting routing
+2. _folder: Opt folder and all child segments out of routing
+
+Parallel and Intercepted Routes:
+1. @folder:	Named slot
+2. (.)folder: Intercept same level	
+3. (..)folder: Intercept one level above
+4. (..)(..)folder: Intercept two levels above
+5. (...)folder: Intercept from root
+
+Metadata File Conventions
+App Icons:
+1. favicon:	Favicon file
+2. icon: App Icon file
+3. icon: Generated App Icon
+4. apple-icon: Apple App Icon file
+5. apple-icon: Generated Apple App Icon
+
+Open Graph and Twitter Images:
+1. opengraph-image: Open Graph image file
+2. opengraph-image: Generated Open Graph image
+3. twitter-image: Twitter image file
+4. twitter-image: Generated Twitter image
+
+SEO:
+1. sitemap: Sitemap file
+2. sitemap: Generated Sitemap
+3. robots: Robots file
+4. robots: Generated Robots file
+
+pages Routing Conventions
+Special Files:
+1. _app: Custom App
+2. _document: Custom Document
+3. _error: Custom Error Page
+4. 404: 404 Error Page
+5. 500: 500 Error Page
+
+Routes:
+Folder convention:		
+1. index: Home page
+2. folder/index: Nested page
+File convention:		
+1. index: Home page
+2. file: Nested page
+
+Dynamic Routes:
+Folder convention:		
+1. [folder]/index: Dynamic route segment
+2. [...folder]/index: Catch-all route segment
+3. [[...folder]]/index: Optional catch-all route segment
+File convention:	
+1. [file]: Dynamic route segment
+2. [...file]: Catch-all route segment
+3. [[...file]]: Optional catch-all route segment
